@@ -1,2 +1,22 @@
-# kap
-Can you conquer the most territory and emerge victorious?
+# Kap
+
+Land.io clone.
+
+## Team
+
+- Osman
+- Can
+- Fatih
+- Furkan
+
+## Technologies
+
+- Pixi
+- Next.js
+- Socket.io
+
+## Parts
+
+- Room
+- User
+- Game
