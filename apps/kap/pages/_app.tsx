@@ -1,18 +1,21 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
+import SocketProvider from '../context/SocketContext';
+import '../styles/tailwind.css';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
         <title>Welcome to kap!</title>
       </Head>
-      <main className="app bg-red-500">
-        <Component {...pageProps} />
+      <main className="h-screen">
+        <SocketProvider>
+          <Component {...pageProps} />
+        </SocketProvider>
       </main>
     </>
   );
 }
 
-export default CustomApp;
+export default App;
